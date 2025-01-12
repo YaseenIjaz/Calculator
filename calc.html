@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tools: Calculator and Unit Converter</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .welcome{
+            width: 1000px;
+            margin: 50px auto;
+        }
+        .welcome p{
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        #wrapper{
+            width: 400px;
+            margin: 50px auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 100%;
+            height: 60px;
+            border: none;
+            text-align: right;
+            padding: 0 20px;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav button{
+            width: auto;
+            box-shadow: none;
+        }
+
+        nav button:active{
+            border: none;
+        }
+
+        nav button:hover{
+            translate: 0;
+            box-shadow: none;
+        }
+
+        button {
+            width: 22%;
+            height: 60px;
+            margin: 1%;
+            font-size: 22px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .operator {
+            background-color: #f1c40f;
+            color: white;
+            font-weight: bold;
+        }
+
+        .equal {
+            background-color: #6F4E37;
+            color: white;
+        }
+
+        #converter{
+            padding: 25px;
+        }
+
+        #about{
+            padding: 25px;
+        }
+
+        .linkedin{
+            text-decoration: none;
+
+        }
+        .email{
+            text-decoration: none;
+            color: #D14836;
+        }
+        .email:hover{
+            color: #B1382D;
+        }
+
+        @media (max-width: 480px) {
+            #wrapper {
+                width: 80%;
+                padding: 10px;
+            }
+
+            button {
+                width: 20%;
+                height: 45px;
+                font-size: 16px;
+            }
+
+            input {
+                height: 45px;
+                font-size: 18px;
+            }
+
+            .navbar-brand {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body onload="hideAllSections();">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Web Tools</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button class="nav-link btn" type="button" onclick="displayCalculator()" data-bs-dismiss="">Calculator</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn" type="button" onclick="displayConverter()">Converter</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn" style="white-space: nowrap;" type="button" onclick="displayAbout()">About Us</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="welcome">
+        <h2>Welcome to My Web Tools</h2>
+        <p>Your one-stop solution for simple and effective tools!</p>
+        <p>Use the navigation bar above to explore our Calculator and Unit Converter features.</p>
+    </div>
+    <div class="container">
+        <div id="calculator"></div>
+        <div id="converter">
+            <div id="wrapper">
+                <h3 class="text-center">Unit Converter</h3>
+                <div class="mb-3">
+                    <label for="unitInput" class="form-label">Enter Value:</label>
+                    <input type="number" id="unitInput" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="unitType" class="form-label">Select Conversion:</label>
+                    <select id="unitType" class="form-select">
+                        <option value="metersToFeet">Meters to Feet</option>
+                        <option value="feetToMeters">Feet to Meters</option>
+                        <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+                        <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary w-100 mb-3" onclick="convertUnit()">Convert</button>
+                <div class="alert alert-info text-center" id="conversionResult" style="display: none;"></div>
+            </div>
+        </div>
+        <div id="about">
+            <h3>About Us</h3>
+            <p>Welcome to our webpage, a platform offering handy tools like a calculator and unit converter to simplify your daily tasks.</p>
+            <p>This project is developed by <strong>Yaseen Ijaz</strong>.</p>
+            <p>Your feedback and suggestions are always welcome!</p>
+            <p>To Connect with me:</p>
+            <ul>
+                <li>
+                    <strong><a class="linkedin" href="https://www.linkedin.com/in/yaseenijaz78/" target="_blank" rel="noopener noreferrer">LinkedIn</a></strong>
+                </li>
+                <li>
+                    <strong><a class="email" href="mailto:yaseenijaz146@gmail.com" target="_blank" rel="noopener noreferrer">Email Me</a></strong>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <script>
+        function hideAllSections() {
+            document.getElementById('calculator').style.display = 'none';
+            document.getElementById('converter').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+        }
+
+        function displayCalculator() {
+            hideAllSections();
+            hideWelcome();
+            document.getElementById("calculator").style.display = 'block'; 
+            document.getElementById("calculator").innerHTML = `
+            <div id="wrapper">
+                <input type="text" id="display">
+                <div id='allButtons'>
+                    <div>
+                        <button class="btn operator" onclick="send('(')">(</button>
+                        <button class="btn operator" onclick="send(')')">)</button>
+                        <button class="btn operator" onclick="clearDisplay()">C</button>
+                        <button class="btn operator" onclick="send('/')">÷</button>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="send(7)">7</button>
+                        <button class="btn" onclick="send(8)">8</button>
+                        <button class="btn" onclick="send(9)">9</button>
+                        <button class="btn operator" onclick="send('*')">×</button>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="send(4)">4</button>
+                        <button class="btn" onclick="send(5)">5</button>
+                        <button class="btn" onclick="send(6)">6</button>
+                        <button class="btn operator" onclick="send('+')">+</button>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="send(1)">1</button>
+                        <button class="btn" onclick="send(2)">2</button>
+                        <button class="btn" onclick="send(3)">3</button>
+                        <button class="btn operator" onclick="send('-')">–</button>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="send('.')">.</button>
+                        <button class="btn" onclick="send(0)">0</button>
+                        <button class="btn" onclick="send('%')">%</button>
+                        <button class="btn equal" onclick="getResult()">=</button>
+                    </div>
+                </div>
+            </div>
+            `;
+        }
+
+        function hideWelcome(){
+            document.querySelector('.welcome').style.display = 'none';
+        }
+
+        function displayConverter() {
+            hideAllSections();
+            hideWelcome();
+            document.getElementById('converter').style.display = 'block';
+        }
+
+        function displayAbout() {
+            hideAllSections();
+            hideWelcome();
+            document.getElementById('about').style.display = 'block';
+        }
+
+        function send(x) {
+            document.getElementById('display').value += x;
+        }
+
+        function getResult() {
+            document.getElementById('display').value = eval(document.getElementById('display').value);
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function convertUnit() {
+            const input = parseFloat(document.getElementById('unitInput').value);
+            const unitType = document.getElementById('unitType').value;
+            let result;
+
+            if (isNaN(input)) {
+                alert('Please enter a valid number');
+                return;
+            }
+
+            switch (unitType) {
+                case 'metersToFeet':
+                    result = (input * 3.28084).toFixed(2) + ' Feet';
+                    break;
+                case 'feetToMeters':
+                    result = (input / 3.28084).toFixed(2) + ' Meters';
+                    break;
+                case 'celsiusToFahrenheit':
+                    result = ((input * 9/5) + 32).toFixed(2) + ' °F';
+                    break;
+                case 'fahrenheitToCelsius':
+                    result = ((input - 32) * 5/9).toFixed(2) + ' °C';
+                    break;
+                default:
+                    result = 'Invalid Conversion';
+            }
+
+            const resultDiv = document.getElementById('conversionResult');
+            resultDiv.style.display = 'block';
+            resultDiv.innerText = result;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
