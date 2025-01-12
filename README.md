@@ -39,8 +39,6 @@ Access the live version of the project here: [My Web Tools](https://yaseenijaz.g
 
 
 ### Unit Converter
-![Unit Converter Screenshot](#)
-
 ![converter](https://github.com/user-attachments/assets/5ce3b683-9123-4f49-b033-1628cc202575)
 
 
